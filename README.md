@@ -1,3 +1,3 @@
 # CV
 
-Site Web présentant mon CV
+Site Web présentant mon Curriculum vitæ
