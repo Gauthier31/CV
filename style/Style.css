@@ -53,10 +53,6 @@ a.active, a:hover {
     color: white;
 }
 
-a.nomPrenom:hover {
-    background-color: rgb(30, 30, 30);
-}
-
 .sup {
     color: #CDCDCD;
     font-size: 20px;
@@ -98,17 +94,6 @@ a:link
     display: none;
 }
 
-@media (max-width: 1352px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
 @media (max-width: 1440px) {
     .checkbtn{
         display: block;
@@ -148,6 +133,16 @@ a:link
 .nomPrenom {
     color: white;
     background-color: none;
+}
+
+a.nomPrenom:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+@media (max-width: 500px) {
+    .nomPrenom {
+        font-size: 20px;
+    }
 }
 
 /* -------------- FIN NavBarre -------------*/
@@ -270,6 +265,13 @@ header {
 
 .photoPays {
     height : 150px;
+}
+
+@media (max-width: 768px) {
+    .photoPays {
+        height : 100px;
+        max-width: 150px;
+    }
 }
 
 .photoProjet {
@@ -395,6 +397,7 @@ header {
     margin-bottom: 10px;
     font-size: 2em;
     font-family: Helvetica, sans-serif;
+    text-align: center;
 }
 
 .description {
@@ -470,9 +473,16 @@ header {
     margin-left: 50px;
 }
 
+@media (max-width: 768px) {
+    .espace8 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+}
+
 .espace9 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 30px;
     background-color: rgb(70, 70, 70);
 }
 
@@ -590,10 +600,18 @@ header {
     height: 40px;
 }
 
+@media (max-width: 700px) {
+    .langages {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+}
+
 /* Nom du langage */
 .nomLangage {
     float: left;
-    text-align: left;
+    text-align: center;
     width: 20%;
     height: 40px;
     font-size: 1.5em;
@@ -604,6 +622,12 @@ header {
     width: 70%;
     height: 30px;
     margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .tailleBar {
+        width: 100%;
+    }
 }
 
 .tailleBar2 {
@@ -650,11 +674,6 @@ u {
 
 a.fleche {
     color: white;
-    background-color: rgb(70, 70, 70);
-}
-
-.experience {
-    height: 700px;
 }
 
 .listeExperience {
@@ -668,9 +687,10 @@ a.fleche {
     overflow-y: scroll;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
     .listeExperience {
-        margin: 0px;
+        margin: 20px;
+        padding: 20px;
     } 
 }
 
@@ -686,3 +706,4 @@ a.fleche {
 .motLangages:hover {
     background-color: rgb(50, 50, 50);
 }
+
