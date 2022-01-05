@@ -103,7 +103,7 @@ a:link
     ul{
         position: fixed;
         width: 100%;
-        height: 60vh;
+        height: 420px;
         background:rgb(70, 70, 70);
         top: 80px;
         left: -100%;
@@ -113,7 +113,7 @@ a:link
 
     nav ul li {
         display: block;
-        margin: 27px 0;
+        margin: 25px 0;
         line-height: 30px;
     }
 
