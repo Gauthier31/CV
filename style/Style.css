@@ -300,6 +300,31 @@ header {
     min-height: 100%
 }
 
+.legendeLoisir {
+    visibility: hidden;
+    color:rgb(161, 161, 161);
+    margin-top: -10px;
+}
+
+.legendePortfolio {
+    visibility: hidden;
+    color:rgb(161, 161, 161);
+}
+
+@media (max-width: 1024px) {
+    .photoLoisir {
+        margin: 10px;
+    }
+
+    .legendeLoisir {
+        visibility: visible;
+    }
+
+    .legendePortfolio {
+        visibility: visible;
+    }
+}
+
 .photoPortfolio {
     display: flex;
     justify-content: center;
@@ -597,7 +622,7 @@ header {
 }
 
 .ecriBleu {
-    color: rgb(80, 82, 224)
+    color: rgb(0, 52, 119)
 }
 
 /* -- FIN Taille et couleur de la police -- */
@@ -696,7 +721,8 @@ a.fleche {
 
 @media (max-width: 768px) {
     .listeExperience {
-        margin: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding: 20px;
     } 
 }
