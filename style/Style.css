@@ -440,7 +440,6 @@ header {
 }
 
 .description3 {
-    line-height: 3;
     margin-top: 20px;
     color: rgb(200, 200, 200);
     font-size: 20px;
@@ -622,7 +621,7 @@ header {
 }
 
 .ecriBleu {
-    color: rgb(0, 52, 119)
+    color: rgb(0, 45, 104)
 }
 
 /* -- FIN Taille et couleur de la police -- */
