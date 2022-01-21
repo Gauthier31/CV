@@ -48,6 +48,12 @@ nav ul li a{
 }
 
 a.active, a:hover {
+    /*background: #808080;*/
+    transition: .5s;
+    color: rgb(200, 200, 200);;
+}
+
+.liste:hover {
     background: #808080;
     transition: .5s;
     color: white;
@@ -219,6 +225,11 @@ header {
 
 
 /* -------------- FIN tête du site -------------*/
+
+.modal {
+    color: black!important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* centrer verticalement */
 .centrer {
@@ -739,3 +750,9 @@ a.fleche {
     background-color: rgb(50, 50, 50);
 }
 
+/* Pour modal */
+.afficher {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2000ms ease, visibility 2000ms ease;
+}
