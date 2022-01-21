@@ -4,14 +4,36 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="image/LogoSite.PNG">
-    <title>Etudiant en formatique</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauthier GUIROLA--BOË</title>
 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="style/Style.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/814ded4c7d.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
+    <script>
+        function showDiv1() {
+            document.getElementById("modal1").style.visibility = "visible";
+        }
+        setTimeout("showDiv1()", 2000); // aprés 2 sec
+
+
+
+        function maFonction() {
+            var div = document.getElementById("modal1");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+                div.classList.toggle('afficher');
+            }
+        }
+    </script>
 
 </head>
 
@@ -32,13 +54,13 @@
         </label>
 
         <ul>
-            <li><a href="#acceuil">Accueil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#formations">Formations</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experiences">Expériences</a></li>
-            <li><a href="#loisirs">Loisirs</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#acceuil" class="liste">Accueil</a></li>
+            <li><a href="#competences" class="liste">Compétences</a></li>
+            <li><a href="#formations" class="liste">Formations</a></li>
+            <li><a href="#portfolio" class="liste">Portfolio</a></li>
+            <li><a href="#experiences" class="liste">Expériences</a></li>
+            <li><a href="#loisirs" class="liste">Loisirs</a></li>
+            <li><a href="#contact" class="liste">Contact</a></li>
         </ul>
     </nav>
 
@@ -48,7 +70,6 @@
                 <p class="grandTitre">
                     Bienvenue dans ce site qui présente<br />mon curriculum vitæ
                 </p>
-
                 <div class="espace6" id="presentation"></div>
             </div>
         </div>
@@ -103,6 +124,51 @@
             </div>
         </div>
     </section>
+
+    <div class="bloc" id="actus"></div>
+
+
+
+
+    <!-- Partie Compétences -->
+    <section>
+
+        <div class="row ecriBlanc">
+            <div class="col-xxl-1">
+            </div>
+
+            <div class="col-xxl-10">
+
+                <!-- Titre -->
+                <div class="titre">
+                    <i class="fas fa-newspaper"></i> Actus
+                    <hr />
+                </div>
+                <div class="espace1">
+                    <p class="description">
+                        Je suis actuellement à la <b>recherche d'un stage</b> d'une durée
+                        de 2 mois, du 4 avril au 10 juin, afin de confirmer ma deuxième
+                        année dans mon IUT.
+                        <br />
+                        <br />
+                        Je cherche un stage dans les millieux <b>du conseil, de la
+                            cybersécurité, de la gestion de base de données ou
+                            encore dans le développement de logiciels ou de sites
+                            Web.</b>
+                        <br />
+                        Je suis bien sûr ouvert à d'autres offres de stage dans des
+                        milieux différents. De plus l'apprentissage d'une langue pour un stage
+                        ne me pose pas de problème.
+                        <br />
+                        <br />
+                        N'hésitez pas à <a href="#contact">me contacter</a>
+                        si vous êtes intéresser par mon profil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="bloc" id="competences"></div>
 
@@ -882,6 +948,28 @@
 
     </section>
 
+    <div class="modal fade show afficher" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        style="display: block; visibility: hidden;" aria-modal="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recherche de stage</h5>
+                    <button type="button" id="#btnClose" onclick="maFonction()" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Je suis actuellement a la recherche d'un stage ...
+                    <a href="#actus">
+                        Voir davantages
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="maFonction()" class=" btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
