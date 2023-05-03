@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     text-decoration: none;
     list-style: none;
@@ -7,8 +7,8 @@
 
 body {
     font-family: montserrat;
-    background-color:rgb(50, 50, 50);
-    overflow-x: hidden; 
+    background-color: rgb(50, 50, 50);
+    overflow-x: hidden;
 }
 
 /* ----------------- NavBarre ----------------*/
@@ -29,7 +29,7 @@ label.nom {
     font-weight: bold;
 }
 
-nav ul{
+nav ul {
     float: right;
     margin-right: 20px;
 }
@@ -39,7 +39,7 @@ nav ul li {
     line-height: 80px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     font-size: 17px;
     padding: 30px 20px;
@@ -47,10 +47,12 @@ nav ul li a{
     text-transform: uppercase
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
     /*background: #808080;*/
     transition: .5s;
-    color: rgb(200, 200, 200);;
+    color: rgb(200, 200, 200);
+    ;
 }
 
 .liste:hover {
@@ -81,9 +83,8 @@ inférieur a 780px */
 }
 
 
-a:link 
-{ 
- text-decoration:none; 
+a:link {
+    text-decoration: none;
 }
 
 .checkbtn {
@@ -102,17 +103,16 @@ a:link
 
 /* --- Affichage de la nav bar en mode téléphone --- */
 @media (max-width: 1440px) {
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
 
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         height: 420px;
-        background:rgb(70, 70, 70);
-        top: 80px;
-        left: -100%;
+        background: rgb(70, 70, 70);
+        top: -100%;
         text-align: center;
         transition: all .5s;
     }
@@ -127,13 +127,14 @@ a:link
         font-size: 20px;
     }
 
-    a.active, a:hover {
+    a.active,
+    a:hover {
         background: none;
-        color:#808080;
+        color: #808080;
     }
 
-    #check:checked ~ ul {
-        left:0;
+    #check:checked~ul {
+        top: 80px;
     }
 }
 
@@ -156,7 +157,7 @@ a.nomPrenom:hover {
 
 /* -------------- Tête du site -------------*/
 header {
-    color : white;
+    color: white;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(50, 50, 50, 1) 90%), url("../image/fond7.jpg") no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
@@ -174,7 +175,8 @@ header {
     .header {
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(50, 50, 50, 1) 90%), url("../image/fond9.jpg") no-repeat;
         background-size: cover;
-        height: calc(100vh - 80px);}
+        height: calc(100vh - 80px);
+    }
 }
 
 @media (max-width: 700px) {
@@ -204,21 +206,21 @@ header {
     de la taille de l'écran */
 .grandTitre {
     color: rgb(167, 94, 0);
-    font-size : 70px;
+    font-size: 70px;
     text-align: center;
     font-size: bold;
 }
 
 @media (max-width: 1100px) {
     .grandTitre {
-        font-size : 60px;
+        font-size: 60px;
         text-align: center;
     }
 }
 
 @media (max-width: 900px) {
     .grandTitre {
-        font-size : 50px;
+        font-size: 50px;
         text-align: center;
     }
 }
@@ -227,7 +229,7 @@ header {
 /* -------------- FIN tête du site -------------*/
 
 .modal {
-    color: black!important;
+    color: black !important;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -266,6 +268,7 @@ header {
         text-align: center;
     }
 }
+
 /* ----------------------------------- */
 
 /* ---------  Gestion de images ------------- */
@@ -276,19 +279,20 @@ header {
 }
 
 .photoPays {
-    height : 150px;
+    height: 150px;
 }
 
 @media (max-width: 768px) {
     .photoPays {
-        height : 100px;
+        height: 100px;
         max-width: 150px;
     }
 }
 
 .photoProjet {
     width: 200px;
-    height: 500px;;
+    height: 500px;
+    ;
 }
 
 .dimensionPhoto {
@@ -313,13 +317,13 @@ header {
 
 .legendeLoisir {
     visibility: hidden;
-    color:rgb(161, 161, 161);
+    color: rgb(161, 161, 161);
     margin-top: -10px;
 }
 
 .legendePortfolio {
     visibility: hidden;
-    color:rgb(161, 161, 161);
+    color: rgb(161, 161, 161);
 }
 
 @media (max-width: 1024px) {
@@ -384,7 +388,7 @@ header {
     padding: 10%;
     transform: translate(-50%, -50%);
     /* Couleur transparente */
-    color:rgb(0, 0, 0, 0);
+    color: rgb(0, 0, 0, 0);
 }
 
 .texte_centrer2 {
@@ -398,7 +402,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     /* Couleur transparente */
-    color:rgb(0, 0, 0, 0);
+    color: rgb(0, 0, 0, 0);
 }
 
 .texte_centrer3 {
@@ -412,13 +416,16 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     /* Couleur transparente */
-    color:rgb(0, 0, 0, 0);
+    color: rgb(0, 0, 0, 0);
 }
 
-.texte_centrer:hover, .texte_centrer2:hover, .texte_centrer3:hover {
+.texte_centrer:hover,
+.texte_centrer2:hover,
+.texte_centrer3:hover {
     background-color: rgb(50, 50, 50, 0.8);
     color: rgb(200, 200, 200);
 }
+
 /* -- FIN affichage d'un texte sur une image -- */
 
 /* ----------- Placement texte ------------ */
@@ -458,7 +465,7 @@ header {
 
 .description4 {
     padding: 30px;
-    color:white;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -543,13 +550,13 @@ header {
 /* Bloc avec relief  */
 .parent {
     background-color: #272727;
-    box-shadow: 5px 5px 5px rgba(0,0,0,20);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 20);
     z-index: 2;
 }
 
 .parent2 {
     background-color: #494949;
-    box-shadow: 5px 5px 5px rgba(0,0,0,20);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 20);
 }
 
 /* --- Permet de centrer verticalement --- */
@@ -558,7 +565,7 @@ header {
 }
 
 /* et centrer horizontalement */
-.fils1 {    
+.fils1 {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -628,7 +635,7 @@ header {
 }
 
 .ecricSecondaire {
-    color: #CDCDCD!important;
+    color: #CDCDCD !important;
 }
 
 .ecriBleu {
@@ -681,26 +688,28 @@ header {
 .progress-moved {
     animation: progressAnimation 3s;
 }
-  
+
 @keyframes progressAnimation {
-    0%   { width: 5%;}
+    0% {
+        width: 5%;
+    }
 }
 
 /* ----------- Couleur barre ----------- */
 .violetBar {
-    background-color: rgb(101, 0, 160)!important;
+    background-color: rgb(101, 0, 160) !important;
 }
 
 .orangeBar {
-    background-color: rgb(165, 80, 0)!important;
+    background-color: rgb(165, 80, 0) !important;
 }
 
 .blancBar {
-    background-color: rgb(255, 255, 255)!important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .bleuBar {
-    background-color: rgb(0, 2, 129)!important;
+    background-color: rgb(0, 2, 129) !important;
 }
 
 /* --------- FIN Couleur barre --------- */
@@ -722,7 +731,7 @@ a.fleche {
     background-color: #494949;
 
     height: 600px;
-    
+
     margin: 50px;
     padding: 60px;
 
@@ -734,7 +743,7 @@ a.fleche {
         margin-left: 10px;
         margin-right: 10px;
         padding: 20px;
-    } 
+    }
 }
 
 .listeLangages {
